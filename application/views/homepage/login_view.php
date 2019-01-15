@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="wrapper">
       <form action="<?php echo site_url('welcome/login')?>" method="POST" name="Login_Form" class="form-signin">       
         <h3 class="form-signin-heading">Selamat Datanga! Silahkan Log In</h3>
-        	<?php echo $this->session->flashdata('err') ?> 
+        <?php echo $this->session->flashdata('err') ?> 
         <hr class="colorgraph"><br>
         
         <input type="text" class="form-control" name="user" placeholder="Masukkan Username" required="" autofocus="" />

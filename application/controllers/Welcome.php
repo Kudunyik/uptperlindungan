@@ -29,7 +29,13 @@ class Welcome extends CI_Controller {
 
 	}
 	public function pageUser(){
+		$this->load->view('header');
 		$this->load->view('homepage/user');
+	}
+
+	public function pageProfil(){
+		$this->load->view('header');
+		$this->load->view('profil');
 	}
 	public function logout(){
 		$this->session->sess_destroy();
