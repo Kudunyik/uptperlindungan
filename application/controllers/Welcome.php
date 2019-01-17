@@ -8,6 +8,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('homepage/login_view');
 	}
 
+	function __construct(){
+		parent:: __construct();
+		$this->load->model('pengawasan_model');
+
+	}
 	public function login(){
 		$user = $this->input->post('user',true);
 		$pass = $this->input->post('pass',true);
@@ -29,8 +34,9 @@ class Welcome extends CI_Controller {
 
 	}
 	public function pageUser(){
-		$this->load->view('header');
-		$this->load->view('homepage/beranda');
+/*		$this->load->view('pengawasan/v_datapengawasan');*/
+		$data['data']=$this->db->get('pengawasan');
+		$this->load->view('homepage/beranda',$data);
 	}
 
 	public function pageProfil(){
