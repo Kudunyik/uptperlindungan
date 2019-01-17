@@ -31,7 +31,25 @@
     <link href="<?php echo base_url('assets/css/pe-icon-7-stroke.css');?>" rel="stylesheet" />
 
 
-</head>    
+</head>  
+<body>
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="<?php echo site_url('welcome/logout')?>">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>  
+
+
     <div class="wrapper">
         <div class="sidebar" data-color="purple" data-image="<?php echo base_url('assets/css/demo.css');?>">
     <!--
@@ -43,16 +61,16 @@
 
     <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
-                Creative Tim
+            <a href="<?php echo site_url('welcome/pageUser');?>" class="simple-text">
+                HI, <?php echo $this->session->userdata('loger') ?>
             </a>
         </div>
 
         <ul class="nav">
             <li class="active">
-                <a href="dashboard.html">
+                <a href="<?php echo site_url('welcome/pageUser')?>">
                     <i class="pe-7s-graph"></i>
-                    <p>Dashboard</p>
+                    <p>Pengawasan</p>
                 </a>
             </li>
             <li>
@@ -64,40 +82,4 @@
         </ul>
     </div>
 </div>
-
-<script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-<!--  Charts Plugin -->
-<script src="assets/js/chartist.min.js"></script>
-
-<!--  Notifications Plugin    -->
-<script src="assets/js/bootstrap-notify.js"></script>
-
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
-<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
-
-<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-<script src="assets/js/demo.js"></script>
-
-<script type="text/javascript">
-   $(document).ready(function(){
-
-       demo.initChartist();
-
-       $.notify({
-           icon: 'pe-7s-gift',
-           message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
-
-       },{
-        type: 'info',
-        timer: 4000
-    });
-
-   });
-</script>
-
 </html>

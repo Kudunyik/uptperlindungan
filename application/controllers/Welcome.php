@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
 	}
 	public function pageUser(){
 		$this->load->view('header');
-		$this->load->view('homepage/user');
+		$this->load->view('homepage/beranda');
 	}
 
 	public function pageProfil(){
