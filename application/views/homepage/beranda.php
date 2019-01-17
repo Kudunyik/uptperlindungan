@@ -33,6 +33,18 @@
 
 </head>
 <body>
-
+    <table id="dt-basic" class="table table-striped table-bordered">
+     <thead>
+         <tr>
+             <th>No</th>
+             <th>Tanggal</th>
+             <th>Lokasi</th>
+             <th>Barang Yang Diawasi</th>
+             <th>Hasil Temuan</th>
+             <th>Tindakan</th>
+             <th>Action</th>
+         </tr>
+     </thead>
+    </table>
 </body>
 </html>
