@@ -79,6 +79,12 @@
                     <p>User Profile</p>
                 </a>
             </li>
+              <li>
+                <a href="<?php echo site_url('welcome/suratMasuk')?>">
+                    <i class="pe-7s-user"></i>
+                    <p>Surat Masuk</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>

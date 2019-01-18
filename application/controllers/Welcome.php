@@ -43,6 +43,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('profil');
 	}
+
+	public function suratMasuk(){
+		$this->load->view('header');
+		$this->load->view('suratMasuk');
+	}
 	public function logout(){
 		$this->session->sess_destroy();
 		redirect('welcome/index');
