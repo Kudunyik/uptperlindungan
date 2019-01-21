@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 			$data = array('logged_in' => true,
 				'loger'=> $select -> username);
 			$this->session->set_userdata($data);
-			redirect('welcome/pageUser');
+			redirect('welcome/pagePenga');
 		}else{
 		//Jika login salah
 			$this->session->set_flashdata('err','username dan password salah');
@@ -33,15 +33,30 @@ class Welcome extends CI_Controller {
 		}
 
 	}
-	public function pageUser(){
+/*	public function pageUser(){*/
+/*		$this->load->view('pengawasan/v_datapengawasan');*/
+		/*$data['data']=$this->db->get('pengawasan');*/
+/*		$data['content']='content.php';
+		$this->load->view('home',$data);*/
+	/*}*/
+
+	public function pagePengawasan(){
 /*		$this->load->view('pengawasan/v_datapengawasan');*/
 		$data['data']=$this->db->get('pengawasan');
-		$this->load->view('homepage/beranda',$data);
+		$data['content']='homepage/beranda.php';
+		$this->load->view('home',$data);
 	}
+
+
 
 	public function pageProfil(){
 		$this->load->view('header');
 		$this->load->view('profil');
+	}
+
+	public function suratMasuk(){
+		$this->load->view('header');
+		$this->load->view('suratMasuk');
 	}
 	public function logout(){
 		$this->session->sess_destroy();

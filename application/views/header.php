@@ -61,14 +61,14 @@
 
     <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="<?php echo site_url('welcome/pageUser');?>" class="simple-text">
+            <a href="<?php echo site_url('welcome/pagePengawasan');?>" class="simple-text">
                 HI, <?php echo $this->session->userdata('loger') ?>
             </a>
         </div>
 
         <ul class="nav">
             <li class="active">
-                <a href="<?php echo site_url('welcome/pageUser')?>">
+                <a href="<?php echo site_url('welcome/pagePengawasan')?>">
                     <i class="pe-7s-graph"></i>
                     <p>Pengawasan</p>
                 </a>
@@ -77,6 +77,12 @@
                 <a href="<?php echo site_url('welcome/pageProfil')?>">
                     <i class="pe-7s-user"></i>
                     <p>User Profile</p>
+                </a>
+            </li>
+              <li>
+                <a href="<?php echo site_url('welcome/suratMasuk')?>">
+                    <i class="pe-7s-user"></i>
+                    <p>Surat Masuk</p>
                 </a>
             </li>
         </ul>

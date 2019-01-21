@@ -17,4 +17,17 @@ class Pengawasan_model extends CI_Model {
 		return $k;
 	}
 
+	public function getinsert($data)
+	{
+		$this->db->insert('pengawasan',$data);
+
+	}
+
+	public function hapus($id){
+		$this->db->where($this->primary, $id);
+		$this->db->delete($this->table);
+    }
+
+
+
 }
