@@ -42,13 +42,18 @@
                 <th class="b-all font-weight-bold text-center" rowspan="2" style="width: 5%; padding-bottom: 2em;">Alamat Pengirim</th>
                 <th class="b-all font-weight-bold text-center " colspan="3" style="width: 10%; padding-bottom: 2em;">Dari Surat Masuk</th>
                 <th class="b-all font-weight-bold text-center" rowspan="2" style="width: 1%; padding-bottom: 2em;">Nomor Petunjuk</th>
+<<<<<<< HEAD
                 <th class="b-all font-weight-bold text-center" rowspan="2" style="width: 1%; padding-bottom: 2em;">Nomor Paket</th>
                 <th class="b-all font-weight-bold text-center" rowspan="2" style="width: 1%; padding-bottom: 2em;">Action</th>
+=======
+                </tr>
+>>>>>>> 7ad58b0251a9be86c077eb219877bb57168cb9e5
                  <tr class="b-all text-center">
                  <th class="b-all font-weight-bold text-center">Tanggal</th>
                  <th class="b-all font-weight-bold text-center">Nomor</th>
                  <th class="b-all font-weight-bold text-center" style="width: 3%; padding-bottom">PERIHAL</th>
                  </tr>
+<<<<<<< HEAD
 
 
 
@@ -63,16 +68,30 @@
                     ?>
                 </tr> -->
           <!--    <tr class="b-all text-center">
+=======
+            </thead>
+
+            <tbody>
+             <tr class="b-all text-center">
+>>>>>>> 7ad58b0251a9be86c077eb219877bb57168cb9e5
               <td class="b-all mdi mdi-check"></td>
               <td class="b-all"></td>
               <td class="b-all"></td>
               <td class="b-all"></td>
               <td class="b-all"></td>
               <td class="b-all mdi mdi-check"></td>
+<<<<<<< HEAD
               <td class="text-nowrap text-center"> -->
             <!--    <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
                <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger" alt="alert" class="img-responsive model_img" id="sa-params"></i> </a>
               </td> -->
+=======
+              <td class="text-nowrap text-center">
+               <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+               <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger" alt="alert" class="img-responsive model_img" id="sa-params"></i> </a>
+              </td>
+             </tr>
+>>>>>>> 7ad58b0251a9be86c077eb219877bb57168cb9e5
 
             </tbody>
            </table>
